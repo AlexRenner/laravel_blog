@@ -28,7 +28,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    It works!
+                    Laravel Blog
                 </div>
 
                 <div class="links">
