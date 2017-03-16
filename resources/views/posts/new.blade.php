@@ -1,7 +1,8 @@
 @extends('layout')
 
 @section('content')
-	<form method="POST" action="posts" id="new-post-form">
+	<!-- form for creating a new blog post -->
+	<form method="POST" action="/laravel/public/posts" id="new-post-form">
 		{{ csrf_field() }}
 
 		<label for="title">Title:</label><br>

@@ -30,9 +30,9 @@
 
               <div class="links">
                   <a href="https://laravel.com/docs">Documentation</a>
-                  <a href="/">Home</a>
-                  <a href="posts">Blogs</a>
-                  <a href="posts/new">New Post</a>
+                  <a href="/laravel/public/">Home</a>
+                  <a href="/laravel/public/posts">Blogs</a>
+                  <a href="/laravel/public/posts/new">New Post</a>
               </div>
 
               @yield('content')
