@@ -18,6 +18,25 @@ class PostsController extends Controller
   }
 
   public function store() {
-  	dd(request()->all());
+    // Good for testing response
+  	// dd(request()->all());
+
+    // Server side validation:
+    $this->validate(request(), [
+      'title' => 'required',
+      'body' => 'required'
+    ]);
+
+    // Create new post object
+    $post = new Post;
+    // Assign its attributes
+    $post->title = request('title');
+    $post->body = request('body');
+    // Save it to database
+    $post->save();
+    // The above information is the long hand of
+    // Post::create(request(['title', 'body']));
+    
+    return redirect('posts');
   }
 }
