@@ -1,3 +1,5 @@
+Note from Alex R.: This a fun little blog I made on an Xampp server in order to learn the basics of Laravel, Composer and Apache
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
