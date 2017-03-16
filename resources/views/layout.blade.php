@@ -7,7 +7,7 @@
 
         <title>Laravel</title>
         
-        <link rel="stylesheet" type="text/css" href="css/app.css">
+        <link rel="stylesheet" type="text/css" href="/laravel/public/css/app.css">
     </head>
     <body>
         <div class="flex-center position-ref full-height">
