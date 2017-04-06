@@ -10,6 +10,8 @@ class PostsController extends Controller
   public function index() {
   	$posts = Post::all();
 
+    // $posts = Post::all()->order_By('upload_time', 'desc')->first();
+
   	return view('posts.index', compact('posts'));
   }
 
@@ -36,7 +38,16 @@ class PostsController extends Controller
     $post->save();
     // The above information is the long hand of
     // Post::create(request(['title', 'body']));
+
+    return redirect('posts');
+  }
+
+  public function destroy($id) {
+
+    $post = Post::find($id);
     
+    $post->delete();
+
     return redirect('posts');
   }
 }

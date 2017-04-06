@@ -7,3 +7,4 @@ Route::get('/', function() {
 Route::get('posts', 'PostsController@index');
 Route::get('posts/new', 'PostsController@new');
 Route::post('posts', 'PostsController@store');
+Route::post('posts/{id}', 'PostsController@destroy');
